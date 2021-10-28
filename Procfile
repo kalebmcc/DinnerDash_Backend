@@ -1,1 +1,1 @@
-web: gunicorn DinnerDash_Backend.wsgi
+web: gunicorn dinnerdash_django.wsgi
