@@ -6,7 +6,7 @@ class Recipe(models.Model):
     ingredients = models.TextField()
     description = models.TextField()
     likes = models.TextField()
-    owner = models.ForeignKey('users.User', related_name='recipes',on_delete=models.CASCADE)
+    owner = models.ForeignKey('users.User', related_name='recipes', null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
