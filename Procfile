@@ -1,0 +1,1 @@
+web: gunicorn DinnerDash_Backend.wsgi
