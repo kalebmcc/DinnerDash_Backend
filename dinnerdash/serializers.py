@@ -7,7 +7,7 @@ class RecipeSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Recipe
-        fields = ('title', 'category', 'ingredients', 'description', 'likes', 'owner' )
+        fields = ('title', 'category', 'ingredients', 'description', "image", 'owner' )
 
 
 # class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
