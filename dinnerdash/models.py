@@ -5,6 +5,7 @@ class Recipe(models.Model):
     category = models.CharField(max_length=100)
     ingredients = models.TextField()
     description = models.TextField()
+    directions = models.TextField()
     image = models.TextField()
     owner = models.ForeignKey('users.User', related_name='recipes', null=True, blank=True, on_delete=models.CASCADE)
 
